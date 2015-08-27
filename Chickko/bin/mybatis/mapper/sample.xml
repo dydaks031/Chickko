@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample">
+	<select id="getInteger" resultType="java.lang.Integer">
+		SELECT
+			1
+		FROM DUAL
+	</select>
+	<select id="getUserMap" resultType="java.util.HashMap">
+		SELECT
+			IDX,
+			NAME
+		FROM USER_INFO
+	</select>
+	<select id="getUserList" resultType="kr.chickko.collection.SexyMap">
+		SELECT
+			IDX,
+			NAME
+		FROM USER_INFO
+	</select>
+</mapper>

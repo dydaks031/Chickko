@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="chicken">
+	<select id="getChickenInfoAll" resultType="kr.chickko.collection.SexyMap">
+		SELECT * FROM CHICKENINFO
+	</select>
+	<select id="getChickenInfoBySeq" parameterType="int" resultType="kr.chickko.collection.SexyMap">
+		SELECT * FROM CHICKENINFO WHERE biChickenSeq = ?
+	</select>
+</mapper>
