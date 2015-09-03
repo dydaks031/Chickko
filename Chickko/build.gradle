@@ -57,6 +57,10 @@ dependencies {
     // S :: Codec Library
     compile("commons-codec:commons-codec:1.10")
     
+    // S :: Apache commons
+    compile("org.apache.commons:commons-lang3:3.0")
+    compile("commons-collections:commons-collections:3.0")
+    
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
 
